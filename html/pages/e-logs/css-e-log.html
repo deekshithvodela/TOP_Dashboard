@@ -53,12 +53,13 @@
     </style>
 </head>
 <body>
+    <navigation>
     <ul type="none" style="display: flex; gap: 10px;">
         <li><a href="../../index.html">Home</a></li>
         <li><a href="../../pages/about.html">About</a></li>
         <li><a href="../../pages/e-logs.html">E-Log</a></li>
     </ul>
-
+</navigation>
     <article>
  <h1>Deekshith's TOP Dashboard - CSS</h1>
     <nav id="table-of-contents">
@@ -73,11 +74,11 @@
 </ol>
 </nav>
 <section id="Introduction">
-    <h2 >Introduction</h2>
+    <h2><a class="nav-link" href="#Introduction">Introduction</a></h2>
       <p>CSS is Cascading Style Sheets. It is a style sheet language used for describing the presentation of a document written in HTML or XML.</p>
 </section>
 <section id="CSS Syntax">
-      <h2 >CSS Syntax</h2>
+      <h2><a class="nav-link" href="#CSS Syntax">CSS Syntax</a></h2>
       <p>CSS is made up of selectors and declaration blocks. The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon.</p>
       <pre>
 selector {
@@ -115,7 +116,7 @@ div p {
 
 </section>
 <section id="Adding CSS in HTML">
-    <h2 >Adding CSS in HTML</h2>
+    <h2><a class="nav-link" href="#Adding CSS in HTML">Adding CSS in HTML</a></h2>
       <p>There are three ways to add CSS to HTML: Inline CSS, Internal CSS, and External CSS.</p>
       <h3>Inline CSS</h3>
       <p>Inline CSS is used to apply a unique style to a single HTML element. To use inline CSS, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
@@ -151,7 +152,7 @@ div p {
       <p>In the above code, "styles.css" is the name of the external CSS file.</p>
 </section>
 <section id="CSS Comments">
-    <h2 >CSS Comments</h2>
+    <h2><a class="nav-link" href="#CSS Comments">CSS Comments</a></h2>
       <p>Comments in CSS are used to explain the code and make it more readable. Comments are ignored by browsers and do not affect the rendering of the document. In CSS, comments are written inside /* and */.</p>
       <pre>
 /* This is a comment in CSS */ 
@@ -161,11 +162,12 @@ body {
       </pre>
 </section>
 <Section id="assignments">
+    <h2><a class="nav-link" href="#assignments">Assignments</a></h2>
     <strong>Some of the assignments will have their CSS code as internal CSS code. </strong>
 <section id="selectors-assignment">
-    <h2 id="Top Assignment on Selectors">Top Assignment on Selectors</h2>
+    <h3 id="Top Assignment on Selectors"><a class="nav-link" href="#Top Assignment on Selectors">Top Assignment on Selectors</a></h3>
      <p> here Im going to use some selectors (class selectors, id selectors, type selectors and universal selectors) to showcase the assignment here. </p>
-     <h3>Css Methods</h3>
+     <h4>CSS Methods</h4>
      <p> I have attached an external css file to this project in the ~/css/styles.css file in the repo. Thats how external method works</p>
         <p> I have also used internal css method in this file itself in the &lt;head&gt; section to set some styles for the body and h1 tags. 
           I am assigning id="Top Assignment on Selectors" to the heading of this section. Now to target this id selector in the internal css method, I have used the following code:
@@ -182,7 +184,7 @@ body {
         <pre>
 &lt;p style="color: green; font-weight: bold;"&gt; This text is green and bold because of the inline css method used here in this &lt;p&gt; tag.&lt;/p&gt;
         </pre>
-        <h3>Class Id Selectors</h3>
+        <h4>Class Id Selectors</h4>
         <p> In the previous section we saw how I selected id="Top Assignment on Selectors" using the internal CSS method. In this assignment we need to assign and understand how class and id selectors work.
             In heirarchy, id selectors have more specificity than class selectors. This means that if both an id selector and a class selector target the same element, the styles defined in the id selector will take precedence over those defined in the class selector.
         </p>
@@ -221,7 +223,7 @@ body {
     font-size: 18px;
 }
         </pre>
-        <h3>Chaining Selectors</h3>
+        <h4>Chaining Selectors</h4>
 <p>Now lets look at chaining selctors</p>
 <p> This is a list of elements with multiple classes defined as themselves.</p>
 <ul>
@@ -240,7 +242,7 @@ body {
 
 </p></pre>
 <p> As you can see how the 1st one is in red color while the other two are in green color. If we write the classes assigned to an element with no space we are chaining the selectors to pick the element that contains specifically all those selectors.</p>
-<h3>Descending Combinators</h3>
+<h4>Descending Combinators</h4>
 <p> This is similar to how you navigate through folders in a linux/ wsl command line with cd command. more or less like the folder tree. If you have more than 1 similar parent and child elements like &lt;p class="paragraphs"&gt; within &lt;h2 class="subheading"&gt;tags and you want to target a specific &lt;p class="paragraphs"&gt; child element within a specific &lt;h2 class="subheading"&gt; element, we use descending combinators.</p>
 <p> Here is an example: (observe the syntax, a single space between the classes defines descending combinator.)</p>
 <pre>
@@ -259,9 +261,9 @@ h3 p {
 </section>
 
 <section id="cascade-assignment">
-    <h2>Cascade Assignment</h2>
+    <h3><a class="nav-link" href="#cascade-assignment">Cascade Assignment</a></h3>
     <p> I'm copying the html code directly from the assignments provided by the TOP here to finish my assignment.</p>
-   <p> Here is the code:</p>
+   <p> Here is the assignment HTML code:</p>
     <pre>    
          &lt;p class="para"&gt;I'm just a paragraph with extra bold text!&lt;/p&gt;
     &lt;p class="para small-para"&gt;I'm a smaller paragraph, also with extra bold text&lt;/p&gt;
@@ -273,7 +275,8 @@ h3 p {
       &lt;div class="text child"&gt;I'm a smaller child div with extra bold text.&lt;/div&gt;
     &lt;/div&gt;
      </pre>
-
+     <h4>Rendered HTML from the above code with CSS modification:</h4>
+<section class="rendered-html">
 
          <p class="para">I'm just a paragraph with extra bold text!</p>
     <p class="para small-para">I'm a smaller paragraph, also with extra bold text!</p>
@@ -285,8 +288,8 @@ h3 p {
     <div class="text">I'm a div with thin text and a child div!
       <div class="text child">I'm a smaller child div with extra bold text.</div>
     </div>
-   
-    <h3>CSS Code for the above HTML:</h3>
+   </section>
+    <p>Here is the CSS Code for the above assignment HTML code:</p>
     <pre>
          .para {
             font-weight: bold; 

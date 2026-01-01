@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
+    <navigation>
     <ul type="none" style="display: flex; gap: 10px;">
         <li><a href="../../index.html">Home</a></li>
         <li><a href="../../pages/about.html">About</a></li>
         <li><a href="../../pages/e-logs.html">E-Log</a></li>
     </ul>
- 
+ </navigation>
+ <article>
     <h1>Deekshith's TOP Dashboard - HTML</h1>
+
+<section id="table-of-contents">
     <h2>Table of Contents</h2>
 <ol>
     <li><a href="#Introduction">Introduction</a></li>
@@ -21,15 +25,21 @@
     <li><a href="#Lists">Lists</a></li>
     <li><a href="#Links">Links</a></li>
     <li><a href="#Images">Images</a></li>
+    <li><a href="#assignments">Assignments</a></li>
     
 </ol>
-    <h2 id="Introduction">Introduction</h2>
+</section>  
+
+<section id="Introduction">
+    <h2><a class="nav-link" href="#Introduction">Introduction</a></h2>
     <p>Welcome to my TOP projects dashboard! Here I'm gonna showcase all the projects I'm building as I learn from The Odin Project (TOP).</p>
     <p>I will try to use the course material to build this page which would reflect my learning journey.</p>
     <p><i>This is an e-log of my learning to code. Resource: <a href="https://www.theodinproject.com">The Odin Project</a></i></p>
     <p><i>I am following TOP curriculum on coding for beginners, Web Development. I have completed basics of using texteditors(I am using VS code) and git before diving into applying html.</i></p>
+</section>
 
-    <h2 id="HTML">HTML</h2>
+<section id="HTML">
+    <h2><a href="#HTML" class="nav-link"> HTML </a></h2>
 
     <h3>Here's how text is handled in HTML</h3>
     <p> Using the paragraph tag &lt;p&gt; makes life easy while the other tags like &lt;h1&gt; through &lt;h6&gt; are used for headings and structure.</p>
@@ -37,8 +47,10 @@
     <p> Textarea tag is used to create a multi-line text input field. It's code is <em>&lt;textarea&gt;&lt;/textarea&gt;</em></p>
     <p>This code generates something like this.</p>
     <textarea> This is text area yo! </textarea>
+</section>
 
-    <h2 id="Lists">Lists</h2>
+<section id="Lists">
+    <h2 ><a class="nav-link" href="#Lists"> Lists </a></h2>
     <p> speaking about lists, lets add the list of the HTML curriculum from TOP to demonstrate how to use lists</p>
     <p> Damn! I need to acknowledge the ease of coding in VS Code with its auto complete feature.</p>
     <p> Here is the list of HTML curriculum from TOP:</p>
@@ -54,8 +66,10 @@
 </ol>
 <p> This is what's called an ordered list. It is ordered list because it signifies the most effective order of completing the curriculum.</p>
 <p> If I were to randomly learn the curriculum, I would miss important foundational concepts. The learning curve would rather be steeper and less efficient.</p>
+</section>
 
-<h2 id="Links">Links</h2>
+<section id="Links">
+<h2> <a class="nav-link" href="#Links">Links</a></h2>
 
 <h4> Anchor tags</h4>
 <p>Now we will look at links and stuff. so &lt;a href="..."&gt; is used to create links in HTML.</p>
@@ -68,15 +82,31 @@
 <h4> Absolute and Relative links</h4>
 <p> Now that we have learned how to add absolute links like TOP website. Lets add a relative link to the about page:</p>
 <p><a href="../../pages/about.html">About </a> This is the link to another page on the same website domain. To add anchor tag &lt;a href="..."&gt; to such relative pages, we just add about.html in the href attribute like this <em> &lt;a href="about.html"&gt;About&lt;/a&gt; </em></p>
+</section>
 
-<h2 id="Images">Images</h2>
+<section id="Images">
+<h2 ><a class="nav-link" href="#Images">Images</h2>
 <p> Now lets add an Image to our website</p>
 <p> To add an image, we use the &lt;img&gt; tag. The img tag is a self closing tag and it doesn't have a closing tag like &lt;/img&gt;. The img tag uses attributes like src and alt to define the source of the image and the alternative text respectively.</p>
 <p> The src attribute is used to specify the path to the image file. It's similar to href attribute in an anchor tag &lt;a href="..."&gt;. It can be an absolute path or a relative path. The alt attribute is used to provide alternative text for the image in case the image cannot be displayed.</p>
 <p> Here is an example of an image tag:</p>
 <img src="../../assets/images/vdlogo.jpg" alt="VD logo" width="200" height="auto">
-    
+</section>
+
+<section id="assignments">
+<h2> <a class="nav-link" href="#Assignments">Assignments</a></h2>
+<p> As part of HTML assignment, I made the following recipe pages:</p>
+<ul>
+    <li><a href="../../recipe/hot-chocolate.html">Recipe: Hot Chocolate</a></li>
+    <li><a href="../../recipe/strawberry-jam.html">Recipe: Strawberry Jam</a></li>
+    <li><a href="../../recipe/sunny-side-up-egg.html">Recipe: Sunny Side Up Eggs</a></li>
+</ul>
+</section>
+<section>   
 <p>
 <a href="#top">Back to Top</a></p>
+</section>
+
+</article>
           </body>
 </html>
